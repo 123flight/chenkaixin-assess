@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Description:
+ * @Author: C-Happy
+ * @Date: 2021-03-29 09:44:36
+ * @LastEditors: C-Happy
+ * @LastEditTime: 2021-03-29 11:58:19
+ */
+import React, { Component } from 'react';
+import "./App.css";
+import Side from "./components/sideLeft/Side";
+import Main from './components/mainRight/Main'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Side />
+        <Main />
+      </div>
+    );
+  }
 }
 
 export default App;

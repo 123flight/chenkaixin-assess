@@ -1,13 +1,25 @@
+/*
+ * @Description: 
+ * @Author: C-Happy
+ * @Date: 2021-03-29 09:44:36
+ * @LastEditors: C-Happy
+ * @LastEditTime: 2021-03-29 12:25:42
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App'
+
+import { Provider } from "react-redux";
+import store from "./store/index";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </div>,
   document.getElementById('root')
 );
 
